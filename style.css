@@ -24,17 +24,31 @@ nav {
     clear: both;
     background-color: aquamarine;
     width: auto;
-    height:35px;
+    height: 26px;
 }
-nav div ul li{
+
+nav div ul li {
     display: inline;
 }
-nav div ul{
-    float:left;
+
+nav div ul {
+    float: left;
 }
+
 nav div.NavSearch {
     float: right;
 }
+
+nav div.NavSearch form input.SearchField {
+    width: 200px;
+    height: 24px;
+}
+
+nav div.NavSearch form input.SubmitButton {
+    width: 100px;
+    height: 24px;
+}
+
 ul {
     list-style-type: none;
     margin: 0;
@@ -42,9 +56,25 @@ ul {
     overflow: hidden;
 }
 
-li.nav a {
-    color: brown;
-    text-align: left;
-    padding: 14px 16px;
+div.NavContent ul li a {
+    font-size: larger;
+}
+
+div.NavContent ul li {
+    border-right: 2px solid black;
+}
+
+div.NavContent ul li:last-child {
+    border-right: none;
+}
+
+div.NavContent ul li a {
     text-decoration: none;
+}
+
+div.NavContent ul li a:hover {
+    color: brown;
+    text-decoration-line: underline;
+    text-decoration-style: solid;
+    text-decoration-color: brown;
 }
